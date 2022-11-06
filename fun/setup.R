@@ -22,10 +22,9 @@ lpak<- function(pkg){sapply(pkg, require, character.only = TRUE)}
 #List of packeges needed
 packages <- c("tidyverse","sp","sf",
               "raster","scales","httr",
-              'geobr',"tmap")
+              'geobr',"tmap","leaflet","purrr","MetBrewer")
 
 packages2<- c(packages,"rayshader","getSpatialData")
-
 
 
 #Running the functions
@@ -33,4 +32,4 @@ ipak_rayshader()
 suppressMessages(ipak(packages))
 suppressMessages(lpak(packages2))
 
-
+rm(packages,packages2,lpak,ipak,ipak_rayshader)

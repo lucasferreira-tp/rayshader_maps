@@ -3,9 +3,6 @@
 source('./fun/setup.R')
 
 
-#Code based in AOP Project, from Brazil
-
-
 # 01. Set login Eardata Nasa ---------------------------------------------------
 
 message("Inform username and password to access https://urs.earthdata.nasa.gov ")
@@ -68,7 +65,7 @@ rst_layer_crop <- raster::crop(rst_layer, st_bbox(city))
 #dir.create(paste0("../../data/topografia/", sigla_muni, "/"), recursive = TRUE)
 
 
-
+rst_layer_crop<-mask(rst_layer_crop,city)
 raster::writeRaster(rst_layer_crop, 
                     paste0("data/topografia_", city_initials, ".tif"),
                     overwrite = TRUE)
@@ -76,7 +73,7 @@ raster::writeRaster(rst_layer_crop,
 
 
 
-
+#References: AOP Project (Brazil)
 
   
 
