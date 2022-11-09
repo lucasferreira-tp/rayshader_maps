@@ -22,7 +22,8 @@ lpak<- function(pkg){sapply(pkg, require, character.only = TRUE)}
 #List of packeges needed
 packages <- c("tidyverse","sp","sf",
               "raster","scales","httr",
-              'geobr',"tmap","leaflet","purrr","MetBrewer")
+              'geobr',"tmap","leaflet","purrr","MetBrewer","elevatr",
+              "magick","glue","fontawesome","grid","svgtools")
 
 packages2<- c(packages,"rayshader","getSpatialData")
 
