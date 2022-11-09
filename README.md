@@ -18,5 +18,5 @@ In turn, I obtained the topography data from elevatr package.
 
 This is the first rendered map maked with Rayshader package.
 
-
+![alt text](https://github.com/lucasferreira-tp/rayshader_maps/blob/main/maps/Ubajara_rendered_plot.png?raw=true)
 
