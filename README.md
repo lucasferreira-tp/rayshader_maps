@@ -15,6 +15,7 @@ I got satellite data from Landsat 8 from INPE, the Brazilian National Institute 
 In turn, I obtained the topography data from elevatr package.
 
 **Maps**
+
 This is the first rendered map maked with Rayshader package.
 
 
